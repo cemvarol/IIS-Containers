@@ -1,0 +1,23 @@
+After you download the iis image
+
+docker images
+
+C:\>docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+microsoft/iis       windowsservercore   123f9da95f17        3 weeks ago         10.7GB
+
+
+docker run -d -p 81:80 --name <your image name> microsoft/iis:windowsservercore cmd
+
+docker ps to see the running images, if empty run docker start <image name> to start the docker images
+
+
+docker run -d -p 81:80 --name Potato microsoft/iis:windowsservercore cmd
+
+NOTICE
+Image names are case sensitive
+
+
+
+                              
+                              
