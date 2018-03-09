@@ -1,0 +1,12 @@
+To import the image to docker, use the below command.
+docker load –i "c:\images\PotatoV1.tar"
+docker load -i "c:\images\PotatoV2.tar"
+
+
+PS C:\> docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+cem/Potato          v2                  82133bfc4360        3 hours ago         10.6 GB
+cem/Potato          v3                  123f9da95f17        2 hours ago         10.7 GB
+microsoft/iis       latest              52a0c31aaa72        2 weeks ago         10.5 GB
+
+PS C:\>
