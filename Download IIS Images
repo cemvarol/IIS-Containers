@@ -1,0 +1,18 @@
+Run them on powershell
+
+Install-PackageProvider –Name NuGet –Force
+Install-Module –Name DockerMsftProvider –Repository PSGallery -Force
+Install-Package -Name Docker -ProviderName DockerMsftProvider
+Restart-Computer
+
+Again on powershell
+PS C:\Windows\system32>docker pull microsoft/iis:windowsservercore
+windowsservercore: Pulling from microsoft/iis
+3889bb8d808b: Pull complete
+cfb27c9ba25f: Pull complete
+768eb8a91153: Pull complete
+548bdda6a0d0: Pull complete
+74463ae3b4b0: Pull complete
+Digest: sha256:245e4de030d371d8bf9622620cbbaca6a9a9bad9b79cae12c659cb731e138d82
+Status: Downloaded newer image for microsoft/iis:windowsservercore
+PS C:\Windows\system32>
