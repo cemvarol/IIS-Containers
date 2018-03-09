@@ -1,0 +1,5 @@
+Install-WindowsFeature -Name Web-Mgmt-Service
+New-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\WebManagement\Server -Name EnableRemoteManagement -Value 1 -Force
+Get-Service -Name WMSVC | Start-Service
+net user <your UserName Here> <Password here> /ADD
+net localgroup administrators <user on the previous line> /add
