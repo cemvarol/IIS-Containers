@@ -1,0 +1,4 @@
+docker exec -it Potato powershell
+
+echo "<html><body><h1>88 POTATO POTATO POTATO 88</h1></body></html>" > "c:\inetpub\wwwroot\index.html"
+
