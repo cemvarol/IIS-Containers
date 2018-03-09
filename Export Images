@@ -1,0 +1,4 @@
+export to file
+
+docker save -o c:\images\PotatoV1.tar cemo/Potato:v1
+docker save -o c:\images\Potatov2.tar cemo/Potato:v2
